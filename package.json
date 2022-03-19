@@ -1,0 +1,27 @@
+{
+  "name": "sass-library",
+  "version": "1.0.0",
+  "description": "a sass css library of styles for a quicker development process",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClemSK/sass-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClemSK/sass-library/issues"
+  },
+  "homepage": "https://github.com/ClemSK/sass-library#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^4.1.3",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
