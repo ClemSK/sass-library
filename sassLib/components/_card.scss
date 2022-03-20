@@ -1,6 +1,7 @@
 @use './index' as *;
 @use 'sass:math';
 
+// nesting the title and body of a card inside a card element
 .card {
   display: block;
   padding: $base-padding;

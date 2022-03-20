@@ -7,7 +7,9 @@ $breakpoints: (
 );
 
 @mixin xs-bp {
+  // media-query which looks in the breakpoints map and selects the extra small version
   @media (min-width: map-get($breakpoints, 'xs')) {
+    //   @content means that where the mixin is used we can variables in specific components when the query is called
     @content;
   }
 }
@@ -36,6 +38,7 @@ $breakpoints: (
   }
 }
 
+// creating a default value for breakpoints, a very flexible breakpoint
 @mixin breakpoint($bp: 0) {
   @media (min-width: $bp) {
     @content;

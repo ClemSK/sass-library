@@ -14,6 +14,7 @@
   @include btn;
 }
 
+// looping over colors to produce all the variations of the types of buttons with 3 types of :hover properties
 @each $key, $val in $colors {
   .btn-#{$key} {
     @include btn($val);

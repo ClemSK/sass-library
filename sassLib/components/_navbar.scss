@@ -1,5 +1,7 @@
 @use 'index' as *;
 
+// using the percentage sign to have the styles not compiled to the style-sheet
+// this means that the component can use the styles in the current file but there will be an economy of code compiled
 %flex-layout {
   width: 100%;
   display: flex;

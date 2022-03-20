@@ -1,6 +1,7 @@
 @use 'variables' as *;
 
 @function light-comp($color) {
+  //   using a built in feature of sass 'lighten' and 'compliment' to match colors and lighten them
   $complement: complement($color);
   $light-complement: lighten($complement, 30%);
   @return $light-complement;

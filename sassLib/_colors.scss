@@ -6,6 +6,7 @@
     color: $val;
   }
   .text-hover-#{$key} {
+    //   the ampersand used to nest the hover
     &:hover {
       color: $val;
     }
@@ -14,9 +15,11 @@
     background-color: $val;
   }
   @if ($val != black and $val != white) {
-    // light variations
+    // light variations loopS
     @for $i from 1 through 9 {
+      // taking the key value and using i to increment the value of lightness by intervals of 10
       .text-#{$key}-light-#{$i} {
+        //   mixing the color white with the color
         color: mix(white, $val, $i * 10);
       }
       .text-hover-#{$key}-light-#{$i} {
@@ -29,7 +32,7 @@
       }
     }
 
-    // dark variations
+    // dark variations loop to increment the color palette with black
     @for $i from 1 through 9 {
       .text-#{$key}-dark-#{$i} {
         color: mix(black, $val, $i * 10);
@@ -46,4 +49,5 @@
   }
 }
 
+// possible to add values to be used with elements as they get created e.g. in a list
 // &:nth-child, &:active, &:visited, &:last-child etc
