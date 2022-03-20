@@ -1,8 +1,8 @@
 // customize theme variables
-// This is where users can customise the styles
+// This is where users can customise the styles, while still being able to use the library that was created
 
 // $secondary: indigo;
 // $base-padding: 1rem;
 // $base-border-thickness: 3px;
 
-@import 'sassLib';
+@forward 'sassLib';

@@ -2,10 +2,10 @@
 
 $grid-columns: 12;
 $grid-gaps: (
-  "0": 0,
-  "1": 10px,
-  "2": 20px,
-  "3": 30px,
+  '0': 0,
+  '1': 10px,
+  '2': 20px,
+  '3': 30px,
 );
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 
@@ -41,7 +41,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 }
 
 // col classes
-@include xs {
+@mixin xs-g {
   @for $i from 1 through $grid-columns {
     .col-#{$i}-xs {
       box-sizing: border-box;
@@ -50,7 +50,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
   }
 }
-@include sm {
+@mixin sm-g {
   @for $i from 1 through $grid-columns {
     .col-#{$i}-sm {
       box-sizing: border-box;
@@ -59,7 +59,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
   }
 }
-@include md {
+@mixin md-g {
   @for $i from 1 through $grid-columns {
     .col-#{$i}-md {
       box-sizing: border-box;
@@ -68,7 +68,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
   }
 }
-@include lg {
+@mixin lg-g {
   @for $i from 1 through $grid-columns {
     .col-#{$i}-lg {
       box-sizing: border-box;
@@ -77,7 +77,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
   }
 }
-@include xl {
+@mixin xl-g {
   @for $i from 1 through $grid-columns {
     .col-#{$i}-xl {
       box-sizing: border-box;

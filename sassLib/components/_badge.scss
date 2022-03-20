@@ -1,3 +1,4 @@
+@use 'index' as *;
 @use 'sass:math';
 
 @mixin badge($bg-color: $info) {
@@ -13,7 +14,7 @@
 }
 
 @each $key, $val in $colors {
-  .badge-#{$key}{
+  .badge-#{$key} {
     @include badge($val);
   }
 }

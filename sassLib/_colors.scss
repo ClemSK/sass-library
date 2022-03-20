@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
 @each $key, $val in $colors {
   .text-#{$key} {
     color: $val;
