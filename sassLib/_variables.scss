@@ -1,4 +1,7 @@
+// These are the variables that will be used globally
+
 // theme colors
+// the !defualt means that a user can update if they declare a new variable, but that the current styles are defaults / fallbacks
 $primary: #326dee !default;
 $secondary: #1ac886 !default;
 $error: #d32752 !default;
@@ -6,19 +9,19 @@ $info: #f6c31c !default;
 
 // color palette
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "error": $error,
-  "info": $info,
-  "blue": #1919e6,
-  "red": #e61919,
-  "yellow": #e6e619,
-  "green": #19e635,
-  "orange": #ffa600,
-  "purple": #9900ff,
-  "gray": #808080,
-  "black": black,
-  "white": white,
+  'primary': $primary,
+  'secondary': $secondary,
+  'error': $error,
+  'info': $info,
+  'blue': #1919e6,
+  'red': #e61919,
+  'yellow': #e6e619,
+  'green': #19e635,
+  'orange': #ffa600,
+  'purple': #9900ff,
+  'gray': #808080,
+  'black': black,
+  'white': white,
 ) !default;
 
 // spacing
@@ -30,7 +33,7 @@ $base-border-thickness: 1px !default;
 $base-border-radius: 20px !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // font sizes
 $base-font-size: 1rem !default;

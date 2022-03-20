@@ -22,12 +22,14 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
   flex-flow: row wrap;
 }
 
-// grid gaps
+// loop for grid gaps
 @each $key, $val in $grid-gaps {
+  // the asterisk means for any type of HTML element
   .gap-#{$key} > * {
     padding: $val;
   }
   .gap-#{$key} {
+    //   Adding a negative value to bring the cards closer to the edge of the screen
     margin-left: -$val;
     margin-right: -$val;
   }

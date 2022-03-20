@@ -1,6 +1,9 @@
 @use 'sass:math';
 @use 'variables' as *;
 
+// Here are the padding, margin, opacity, border-radius, display, font-size
+// At the end is a loop with control flow to generate the properties for the CSS file
+
 $utilities: (
   'padding': (
     'prefix': 'p',
