@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - # Sass-library
 
 ## _A Sass library of CSS styles for a quicker development process_
@@ -99,3 +100,13 @@ The main thing that I think that I will be adding include:
 I may also add animations and transitions.
 
 Overall, I've learnt a ton from this project and it will make future styling much more efficient.
+=======
+# sass-library
+a sass css library of styles for a quicker development process
+ 
+It's effectively like creating a mini bulma / tailwind / bootstrap. 
+
+I learnt so much in creating a personal library of CSS styles. 
+
+## [Sass Docs](https://sass-lang.com/)
+>>>>>>> 8dfd304325a2d70c1b08c8df5c399250eba4bfd2
